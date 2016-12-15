@@ -1,0 +1,102 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.15.9
+3 info using node@v4.6.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/agulado/Projects/LayerDrag/dist',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/agulado/.npm/TopuNet-LayerDrag/1.1.1/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/agulado/.npm correctMkdir not in flight; initializing
+10 verbose tar pack [ '/Users/agulado/.npm/TopuNet-LayerDrag/1.1.1/package.tgz',
+10 verbose tar pack   '/Users/agulado/Projects/LayerDrag/dist' ]
+11 verbose tarball /Users/agulado/.npm/TopuNet-LayerDrag/1.1.1/package.tgz
+12 verbose folder /Users/agulado/Projects/LayerDrag/dist
+13 info prepublish TopuNet-LayerDrag@1.1.1
+14 verbose addLocalTarball adding from inside cache /Users/agulado/.npm/TopuNet-LayerDrag/1.1.1/package.tgz
+15 verbose correctMkdir /Users/agulado/.npm correctMkdir not in flight; initializing
+16 silly cache afterAdd TopuNet-LayerDrag@1.1.1
+17 verbose afterAdd /Users/agulado/.npm/TopuNet-LayerDrag/1.1.1/package/package.json not in flight; writing
+18 verbose correctMkdir /Users/agulado/.npm correctMkdir not in flight; initializing
+19 verbose afterAdd /Users/agulado/.npm/TopuNet-LayerDrag/1.1.1/package/package.json written
+20 silly publish { name: 'TopuNet-LayerDrag',
+20 silly publish   version: '1.1.1',
+20 silly publish   description: '拖拽排序',
+20 silly publish   main: 'LayerDrag.js',
+20 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+20 silly publish   repository:
+20 silly publish    { type: 'git',
+20 silly publish      url: 'git+https://github.com/TopuNet/LayerDrag.git' },
+20 silly publish   keywords: [ 'topu.net' ],
+20 silly publish   author: { name: 'Topu.net' },
+20 silly publish   license: 'ISC',
+20 silly publish   bugs: { url: 'https://github.com/TopuNet/LayerDrag/issues' },
+20 silly publish   homepage: 'https://github.com/TopuNet/LayerDrag#readme',
+20 silly publish   readme: 'ERROR: No README data found!',
+20 silly publish   _id: 'TopuNet-LayerDrag@1.1.1',
+20 silly publish   _shasum: 'b99be8007b8fde547be0f7f23a2ede59ad614a29',
+20 silly publish   _from: '.' }
+21 verbose getPublishConfig undefined
+22 silly mapToRegistry name TopuNet-LayerDrag
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry data Result {
+25 silly mapToRegistry   raw: 'TopuNet-LayerDrag',
+25 silly mapToRegistry   scope: null,
+25 silly mapToRegistry   name: 'TopuNet-LayerDrag',
+25 silly mapToRegistry   rawSpec: '',
+25 silly mapToRegistry   spec: 'latest',
+25 silly mapToRegistry   type: 'tag' }
+26 silly mapToRegistry uri https://registry.npmjs.org/TopuNet-LayerDrag
+27 verbose publish registryBase https://registry.npmjs.org/
+28 silly publish uploading /Users/agulado/.npm/TopuNet-LayerDrag/1.1.1/package.tgz
+29 verbose request uri https://registry.npmjs.org/TopuNet-LayerDrag
+30 verbose request sending authorization for write operation
+31 info attempt registry request try #1 at 17:11:30
+32 verbose request using bearer token for auth
+33 verbose request id 25b122d40f49c6c5
+34 http request PUT https://registry.npmjs.org/TopuNet-LayerDrag
+35 http 400 https://registry.npmjs.org/TopuNet-LayerDrag
+36 verbose headers { 'content-type': 'application/json',
+36 verbose headers   'cache-control': 'max-age=300',
+36 verbose headers   'content-length': '55',
+36 verbose headers   'accept-ranges': 'bytes',
+36 verbose headers   date: 'Thu, 15 Dec 2016 09:11:33 GMT',
+36 verbose headers   via: '1.1 varnish',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'x-served-by': 'cache-itm7427-ITM',
+36 verbose headers   'x-cache': 'MISS',
+36 verbose headers   'x-cache-hits': '0',
+36 verbose headers   'x-timer': 'S1481793093.180604,VS0,VE386',
+36 verbose headers   vary: 'Accept-Encoding' }
+37 verbose request invalidating /Users/agulado/.npm/registry.npmjs.org/TopuNet-LayerDrag on PUT
+38 error publish Failed PUT 400
+39 verbose stack Error: "name must be lower case" : TopuNet-LayerDrag
+39 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+39 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+39 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+39 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:200:22)
+39 verbose stack     at emitTwo (events.js:87:13)
+39 verbose stack     at Request.emit (events.js:172:7)
+39 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+39 verbose stack     at emitOne (events.js:82:20)
+39 verbose stack     at Request.emit (events.js:169:7)
+39 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:988:12)
+40 verbose statusCode 400
+41 verbose pkgid TopuNet-LayerDrag
+42 verbose cwd /Users/agulado/Projects/LayerDrag/dist
+43 error Darwin 16.1.0
+44 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+45 error node v4.6.1
+46 error npm  v2.15.9
+47 error code E400
+48 error "name must be lower case" : TopuNet-LayerDrag
+49 error If you need help, you may report this error at:
+49 error     <https://github.com/npm/npm/issues>
+50 verbose exit [ 1, true ]

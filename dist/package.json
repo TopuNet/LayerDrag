@@ -1,0 +1,22 @@
+{
+  "name": "topunet-layerdrag",
+  "version": "1.1.2",
+  "description": "拖拽排序",
+  "main": "LayerDrag.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TopuNet/LayerDrag.git"
+  },
+  "keywords": [
+    "topu.net"
+  ],
+  "author": "Topu.net",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TopuNet/LayerDrag/issues"
+  },
+  "homepage": "https://github.com/TopuNet/LayerDrag#readme"
+}
