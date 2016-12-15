@@ -1,5 +1,5 @@
 /*
-	v1.1.1
+	v1.1.2
 	高京
 	2016-12-03
 	拖拽层改变顺序
@@ -16,7 +16,7 @@
 		},
 		WrapperObj: 外盒对象,
 		ItemsObj: 单元对象,
-		Wrapper_width_px: 外盒宽度,
+		Wrapper_width_px: 外盒宽度
 		Dom_ItemSpace: 项目单元占位盒
 	}
 */
