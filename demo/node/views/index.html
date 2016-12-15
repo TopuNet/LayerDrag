@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>拖拽排序</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <!--[if lte IE 9]><script type="text/javascript" src="/inc/html5shiv.min.js"></script><![endif]-->
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    section.wrap {
+        margin: 10px;
+        border: solid 5px #666;
+    }
+    
+    ul,
+    li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    ul {
+        border: solid 1px #ff0000;
+        position: relative;
+    }
+    
+    ul li {
+        /*position: absolute;*/
+        float: left;
+        width: 50px;
+        height: 20px;
+        padding: 10px;
+        margin: 10px 0 0 10px;
+        border: solid 1px #169bd5;
+        text-align: center;
+        cursor: move;
+    }
+    
+    ul.box_vertical li {
+        position: inherit;
+        width: 90%;
+        height: auto;
+        padding: 0;
+    }
+    
+    ul li.draging {
+        background: #169bd5;
+        color: #fff;
+        opacity: 0.8;
+        -moz-opacity: 0.8;
+        -webkit-opacity: 0.8;
+        filter: alpha(opacity=80);
+    }
+    
+    ul li.beHover {
+        background: #ccc!important;
+    }
+    
+    ul li.space {
+        border: dashed 1px #ccc;
+    }
+    </style>
+</head>
+
+<body>
+    <section class="wrap">
+        <ul class="box">
+            <li class="item">AA</li>
+            <li class="item">BB</li>
+            <li class="item">CC</li>
+            <li class="item">DD</li>
+            <li class="item">EE</li>
+            <li class="item">FF</li>
+            <li class="item">GG</li>
+            <li class="item">HH</li>
+            <li class="item">II</li>
+            <li class="item">JJ</li>
+            <li class="item">KK</li>
+            <li class="item">LL</li>
+            <li class="item">MM</li>
+            <li class="item">NN</li>
+            <li class="item">OO</li>
+            <li class="item">PP</li>
+            <li class="item">QQ</li>
+            <li class="item">RR</li>
+        </ul>
+        <ul class="box_vertical">
+            <li class="item"><img src="/images/01.jpg" style="width:100%;"></li>
+            <li class="item">abc</li>
+            <li class="item"><img src="/images/02.jpg" style="width:100%;"></li>
+        </ul>
+    </section>
+    <script src="/inc/require.js" data-main="/widget/app" id="script_page" page="index"></script>
+</body>
+
+</html>
